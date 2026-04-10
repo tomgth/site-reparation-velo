@@ -106,7 +106,7 @@
         }
        
         .about-text p {
-            margin-bottom: 25px;   /* Espacement entre les paragraphes */
+            margin-bottom: 25px;
             font-size: 1.1rem;
         }
        
@@ -137,13 +137,14 @@
             margin-bottom: 25px;
         }
         
+        /* === NOUVEAU LOGO TROTTINETTE - Beaucoup plus propre === */
         .trottinette-logo {
-            width: 95px;
-            height: 95px;
+            width: 100px;
+            height: 90px;
             margin: 0 auto 25px;
             display: block;
         }
-       
+
         .competences { background: var(--noir); color: white; }
         .competences .section-title { color: white; }
        
@@ -201,14 +202,12 @@
             font-size: 0.9rem;
         }
 
-        /* Amélioration pour téléphone */
         @media (max-width: 768px) {
             .hero-content h1 { font-size: 2.5rem; }
             .hero-content p { font-size: 1.2rem; }
             .nav ul { gap: 20px; font-size: 0.95rem; }
             section { padding: 80px 15px; }
             .section-title { font-size: 2.1rem; }
-            .about-text p { font-size: 1.05rem; margin-bottom: 22px; }
         }
     </style>
 </head>
@@ -236,14 +235,13 @@
         </div>
     </header>
 
-    <!-- À propos - Texte bien aéré -->
+    <!-- À propos -->
     <section id="apropos" class="about">
         <div class="container">
             <h2 class="section-title">À propos de moi</h2>
             <div class="grid">
                 <div class="about-text">
                     <h2>Technicien en reconversion passionné par la mobilité électrique</h2>
-
                     
                     <p>Après une reconversion professionnelle motivée par l’envie de travailler dans un secteur en pleine expansion, je me forme actuellement au métier de <strong>technicien/vendeur cycles</strong>.</p>
                     
@@ -273,18 +271,26 @@
                     <h3>Réparation de Vélos Électriques</h3>
                     <p>Diagnostic complet, réparation du moteur, batterie, contrôleur, freins, transmission et systèmes électriques.</p>
                 </div>
+                
+                <!-- Nouveau logo trottinette beaucoup plus beau -->
                 <div class="service-card">
-                    <svg class="trottinette-logo" viewBox="0 0 200 170" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <circle cx="45" cy="130" r="23" stroke="#00c853" stroke-width="16" fill="white"/>
-                        <circle cx="155" cy="130" r="23" stroke="#00c853" stroke-width="16" fill="white"/>
-                        <rect x="30" y="115" width="140" height="22" rx="8" fill="#00c853"/>
-                        <line x1="115" y1="115" x2="125" y2="55" stroke="#00c853" stroke-width="18" stroke-linecap="round"/>
-                        <line x1="115" y1="55" x2="165" y2="52" stroke="#00c853" stroke-width="16" stroke-linecap="round"/>
-                        <path d="M125 78 L133 62 L145 78 L153 62" fill="none" stroke="#00c853" stroke-width="9" stroke-linecap="round"/>
+                    <svg class="trottinette-logo" viewBox="0 0 200 160" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <!-- Roues -->
+                        <circle cx="45" cy="120" r="23" stroke="#00c853" stroke-width="14" fill="#ffffff"/>
+                        <circle cx="155" cy="120" r="23" stroke="#00c853" stroke-width="14" fill="#ffffff"/>
+                        <!-- Plateforme -->
+                        <rect x="35" y="105" width="130" height="20" rx="8" fill="#00c853"/>
+                        <!-- Colonne / guidon -->
+                        <line x1="115" y1="105" x2="125" y2="55" stroke="#00c853" stroke-width="16" stroke-linecap="round"/>
+                        <!-- Guidon horizontal -->
+                        <line x1="115" y1="55" x2="165" y2="52" stroke="#00c853" stroke-width="14" stroke-linecap="round"/>
+                        <!-- Petit éclair électrique -->
+                        <path d="M125 78 L133 63 L143 78 L153 63" fill="none" stroke="#00c853" stroke-width="8" stroke-linecap="round"/>
                     </svg>
                     <h3>Réparation de Trottinettes Électriques</h3>
                     <p>Tous modèles : réparation électronique, mécanique, changement de pièces, mise à jour firmware.</p>
                 </div>
+                
                 <div class="service-card">
                     <i class="fas fa-tools"></i>
                     <h3>Entretien & Diagnostic</h3>
@@ -294,7 +300,7 @@
         </div>
     </section>
 
-    <!-- Compétences -->
+    <!-- Le reste du site (Compétences, Contact, Footer) reste identique -->
     <section id="competences" class="competences">
         <div class="container">
             <h2 class="section-title">Mes Compétences</h2>
@@ -318,7 +324,6 @@
         </div>
     </section>
 
-    <!-- Contact -->
     <section id="contact" class="contact">
         <div class="container">
             <h2 class="section-title">Contactez-moi</h2>
