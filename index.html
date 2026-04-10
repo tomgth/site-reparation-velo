@@ -17,7 +17,7 @@
        
         body {
             font-family: 'Segoe UI', system-ui, sans-serif;
-            line-height: 1.7;
+            line-height: 1.8;
             color: #333;
             background-color: #fff;
         }
@@ -43,16 +43,24 @@
         }
        
         .nav ul {
-            display: flex; justify-content: center; list-style: none; gap: 40px;
+            display: flex; 
+            justify-content: center; 
+            list-style: none; 
+            gap: 40px;
+            flex-wrap: wrap;
         }
        
         .nav a {
-            color: white; text-decoration: none; font-weight: 500;
+            color: white; 
+            text-decoration: none; 
+            font-weight: 500;
         }
         .nav a:hover { color: var(--vert); }
-       
+
         .hero-content {
-            max-width: 900px; margin: 0 auto; padding: 0 20px;
+            max-width: 900px; 
+            margin: 0 auto; 
+            padding: 0 20px;
         }
        
         .hero-content h1 { 
@@ -61,7 +69,7 @@
             line-height: 1.1; 
         }
         .hero-content p { 
-            font-size: 1.4rem; 
+            font-size: 1.35rem; 
             margin-bottom: 30px; 
         }
        
@@ -95,6 +103,15 @@
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 50px;
             align-items: center;
+        }
+       
+        .about-text p {
+            margin-bottom: 25px;   /* Espacement entre les paragraphes */
+            font-size: 1.1rem;
+        }
+       
+        .about-text p:last-child {
+            margin-bottom: 0;
         }
        
         .services-grid {
@@ -156,7 +173,11 @@
         }
        
         .contact-info {
-            display: flex; flex-wrap: wrap; justify-content: center; gap: 50px; margin-top: 40px;
+            display: flex; 
+            flex-wrap: wrap; 
+            justify-content: center; 
+            gap: 50px; 
+            margin-top: 40px;
         }
        
         .call-btn {
@@ -178,6 +199,16 @@
             text-align: center;
             padding: 40px 20px;
             font-size: 0.9rem;
+        }
+
+        /* Amélioration pour téléphone */
+        @media (max-width: 768px) {
+            .hero-content h1 { font-size: 2.5rem; }
+            .hero-content p { font-size: 1.2rem; }
+            .nav ul { gap: 20px; font-size: 0.95rem; }
+            section { padding: 80px 15px; }
+            .section-title { font-size: 2.1rem; }
+            .about-text p { font-size: 1.05rem; margin-bottom: 22px; }
         }
     </style>
 </head>
@@ -205,23 +236,25 @@
         </div>
     </header>
 
-    <!-- À propos -->
+    <!-- À propos - Texte bien aéré -->
     <section id="apropos" class="about">
         <div class="container">
             <h2 class="section-title">À propos de moi</h2>
             <div class="grid">
                 <div class="about-text">
                     <h2>Technicien en reconversion passionné par la mobilité électrique</h2>
+                    
                     <p>Après une reconversion professionnelle motivée par l’envie de travailler dans un secteur en pleine expansion, je me forme actuellement au métier de <strong>technicien/vendeur cycles</strong>.</p>
-                    <p>
-                    <p>Je viens de réaliser une formation intensive chez <strong>Synitier</strong> : 80 heures de   e-learning + 160 heures en entreprise chez <strong>Repair and Run</strong> (Paris).</p>
+                    
+                    <p>Je viens de réaliser une formation intensive chez <strong>Synitier</strong> : 80 heures de e-learning + 160 heures en entreprise chez <strong>Repair and Run</strong> (Paris).</p>
+                    
                     <p><strong>Disponible dès avril/mai 2026</strong> pour tout type de contrat (CDI, CDD, intérim) en Ille-et-Vilaine.</p>
-                    <p>
+                    
                     <p>Je suis rigoureux, sérieux, passionné par la mécanique et l’électricité, et particulièrement sensible aux enjeux écologiques de la mobilité douce.</p>
                 </div>
+                
                 <div>
-                    <!-- Image recommandée : vélo électrique en réparation (sans visage) -->
-                    <img src="velo-reparation.png" 
+                    <img src="reparation-velo.png" 
                          alt="Réparation de vélo électrique en atelier"
                          style="width:100%; border-radius:16px; box-shadow: 0 15px 35px rgba(0,0,0,0.1);">
                 </div>
@@ -260,7 +293,7 @@
         </div>
     </section>
 
-    <!-- Compétences, Contact et Footer identiques -->
+    <!-- Compétences -->
     <section id="competences" class="competences">
         <div class="container">
             <h2 class="section-title">Mes Compétences</h2>
@@ -284,6 +317,7 @@
         </div>
     </section>
 
+    <!-- Contact -->
     <section id="contact" class="contact">
         <div class="container">
             <h2 class="section-title">Contactez-moi</h2>
