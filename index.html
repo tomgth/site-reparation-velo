@@ -17,13 +17,14 @@
        
         body {
             font-family: 'Segoe UI', system-ui, sans-serif;
-            line-height: 1.6;
+            line-height: 1.7;
             color: #333;
             background-color: #fff;
         }
        
         header {
-            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://cdn.shopify.com/s/files/1/0506/5113/6182/files/reparateur_trottinette_electrique_480x480.jpg?v=1620730082') center/cover no-repeat;
+            background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), 
+                        url('https://cdn.shopify.com/s/files/1/0506/5113/6182/files/reparateur_trottinette_electrique_480x480.jpg?v=1620730082') center/cover no-repeat;
             height: 100vh;
             min-height: 650px;
             display: flex;
@@ -85,7 +86,7 @@
         .grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 40px;
+            gap: 50px;
             align-items: center;
         }
        
@@ -106,13 +107,12 @@
        
         .service-card:hover { transform: translateY(-10px); }
        
-        .service-card i {
+        .service-card i, .trottinette-logo {
             font-size: 3.8rem;
             color: var(--vert);
             margin-bottom: 25px;
         }
         
-        /* Logo Trottinette simplifié et clair */
         .trottinette-logo {
             width: 95px;
             height: 95px;
@@ -172,16 +172,10 @@
             padding: 40px 20px;
             font-size: 0.9rem;
         }
-       
-        @media (max-width: 768px) {
-            .hero-content h1 { font-size: 2.6rem; }
-            .nav ul { gap: 20px; font-size: 0.95rem; }
-        }
     </style>
 </head>
 <body>
 
-    <!-- Navigation -->
     <nav class="nav">
         <ul>
             <li><a href="#accueil">Accueil</a></li>
@@ -204,7 +198,7 @@
         </div>
     </header>
 
-    <!-- À propos -->
+    <!-- À propos - Texte amélioré selon ton image -->
     <section id="apropos" class="about">
         <div class="container">
             <h2 class="section-title">À propos de moi</h2>
@@ -217,14 +211,19 @@
                     <p>Je suis rigoureux, sérieux, passionné par la mécanique et l’électricité, et particulièrement sensible aux enjeux écologiques de la mobilité douce.</p>
                 </div>
                 <div>
-                    <img src="https://images.unsplash.com/photo-1622286342622-0e0e0f2c4e6f?ixlib=rb-4.0.3&auto=format&fit=crop&q=80"
-                         alt="Jean-Paul Gautheron" style="width:100%; border-radius:16px; box-shadow: 0 15px 35px rgba(0,0,0,0.1);">
+                    <!-- ==================== IMAGE À REMPLACER ICI ==================== -->
+                    <img src="https://via.placeholder.com/600x500/00c853/ffffff?text=Photo+Jean-Paul+Gautheron" 
+                         alt="Jean-Paul Gautheron - Technicien en mobilité électrique"
+                         style="width:100%; border-radius:16px; box-shadow: 0 15px 35px rgba(0,0,0,0.1);">
+                    <!-- ================================================================ -->
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Services -->
+    <!-- Services, Compétences, Contact et Footer restent les mêmes que précédemment -->
+    <!-- (je les ai gardés pour que tu aies le code complet) -->
+
     <section id="services">
         <div class="container">
             <h2 class="section-title">Mes Services</h2>
@@ -234,26 +233,18 @@
                     <h3>Réparation de Vélos Électriques</h3>
                     <p>Diagnostic complet, réparation du moteur, batterie, contrôleur, freins, transmission et systèmes électriques.</p>
                 </div>
-                
-                <!-- Trottinette améliorée -->
                 <div class="service-card">
                     <svg class="trottinette-logo" viewBox="0 0 200 170" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <!-- Roues -->
                         <circle cx="45" cy="130" r="23" stroke="#00c853" stroke-width="16" fill="white"/>
                         <circle cx="155" cy="130" r="23" stroke="#00c853" stroke-width="16" fill="white"/>
-                        <!-- Plateforme -->
                         <rect x="30" y="115" width="140" height="22" rx="8" fill="#00c853"/>
-                        <!-- Colonne -->
                         <line x1="115" y1="115" x2="125" y2="55" stroke="#00c853" stroke-width="18" stroke-linecap="round"/>
-                        <!-- Guidon -->
                         <line x1="115" y1="55" x2="165" y2="52" stroke="#00c853" stroke-width="16" stroke-linecap="round"/>
-                        <!-- Éclair -->
                         <path d="M125 78 L133 62 L145 78 L153 62" fill="none" stroke="#00c853" stroke-width="9" stroke-linecap="round"/>
                     </svg>
                     <h3>Réparation de Trottinettes Électriques</h3>
                     <p>Tous modèles : réparation électronique, mécanique, changement de pièces, mise à jour firmware.</p>
                 </div>
-                
                 <div class="service-card">
                     <i class="fas fa-tools"></i>
                     <h3>Entretien & Diagnostic</h3>
@@ -263,7 +254,6 @@
         </div>
     </section>
 
-    <!-- Compétences (logos restaurés) -->
     <section id="competences" class="competences">
         <div class="container">
             <h2 class="section-title">Mes Compétences</h2>
@@ -287,7 +277,6 @@
         </div>
     </section>
 
-    <!-- Contact -->
     <section id="contact" class="contact">
         <div class="container">
             <h2 class="section-title">Contactez-moi</h2>
