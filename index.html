@@ -22,7 +22,6 @@
             background-color: #fff;
         }
        
-        /* Image de fond avec ton fichier PNG */
         header {
             background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), 
                         url('fondtrott.png') center/cover no-repeat;
@@ -77,14 +76,8 @@
             margin: 10px;
             transition: all 0.3s;
         }
-        .btn:hover { 
-            background: var(--vert-fonce); 
-            transform: translateY(-3px); 
-        }
-        .btn-outline { 
-            background: transparent; 
-            border: 2px solid white; 
-        }
+        .btn:hover { background: var(--vert-fonce); transform: translateY(-3px); }
+        .btn-outline { background: transparent; border: 2px solid white; }
        
         section { padding: 100px 20px; }
         .section-title {
@@ -127,7 +120,6 @@
             margin-bottom: 25px;
         }
         
-        /* Logo Trottinette */
         .trottinette-logo {
             width: 95px;
             height: 95px;
@@ -164,11 +156,7 @@
         }
        
         .contact-info {
-            display: flex; 
-            flex-wrap: wrap; 
-            justify-content: center; 
-            gap: 50px; 
-            margin-top: 40px;
+            display: flex; flex-wrap: wrap; justify-content: center; gap: 50px; margin-top: 40px;
         }
        
         .call-btn {
@@ -191,16 +179,10 @@
             padding: 40px 20px;
             font-size: 0.9rem;
         }
-       
-        @media (max-width: 768px) {
-            .hero-content h1 { font-size: 2.6rem; }
-            .nav ul { gap: 20px; font-size: 0.95rem; }
-        }
     </style>
 </head>
 <body>
 
-    <!-- Navigation -->
     <nav class="nav">
         <ul>
             <li><a href="#accueil">Accueil</a></li>
@@ -236,9 +218,9 @@
                     <p>Je suis rigoureux, sérieux, passionné par la mécanique et l’électricité, et particulièrement sensible aux enjeux écologiques de la mobilité douce.</p>
                 </div>
                 <div>
-                    <!-- Remplace cette ligne par le lien de ta photo personnelle -->
-                    <img src="https://via.placeholder.com/600x500/00c853/ffffff?text=Ta+Photo+Professionnelle" 
-                         alt="Jean-Paul Gautheron - Technicien en mobilité électrique"
+                    <!-- Image recommandée : vélo électrique en réparation (sans visage) -->
+                    <img src="https://images.unsplash.com/photo-1611063158832-0c0c3b5e0b5e?ixlib=rb-4.0.3&auto=format&fit=crop&q=80" 
+                         alt="Réparation de vélo électrique en atelier"
                          style="width:100%; border-radius:16px; box-shadow: 0 15px 35px rgba(0,0,0,0.1);">
                 </div>
             </div>
@@ -255,7 +237,6 @@
                     <h3>Réparation de Vélos Électriques</h3>
                     <p>Diagnostic complet, réparation du moteur, batterie, contrôleur, freins, transmission et systèmes électriques.</p>
                 </div>
-                
                 <div class="service-card">
                     <svg class="trottinette-logo" viewBox="0 0 200 170" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <circle cx="45" cy="130" r="23" stroke="#00c853" stroke-width="16" fill="white"/>
@@ -268,7 +249,6 @@
                     <h3>Réparation de Trottinettes Électriques</h3>
                     <p>Tous modèles : réparation électronique, mécanique, changement de pièces, mise à jour firmware.</p>
                 </div>
-                
                 <div class="service-card">
                     <i class="fas fa-tools"></i>
                     <h3>Entretien & Diagnostic</h3>
@@ -278,7 +258,7 @@
         </div>
     </section>
 
-    <!-- Compétences -->
+    <!-- Compétences, Contact et Footer identiques -->
     <section id="competences" class="competences">
         <div class="container">
             <h2 class="section-title">Mes Compétences</h2>
@@ -302,7 +282,6 @@
         </div>
     </section>
 
-    <!-- Contact -->
     <section id="contact" class="contact">
         <div class="container">
             <h2 class="section-title">Contactez-moi</h2>
