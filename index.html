@@ -160,6 +160,13 @@
             font-size: 3.8rem;
             color: var(--vert);
             margin-bottom: 25px;
+        }
+        
+        /* Logo Trottinette personnalisé */
+        .trottinette-logo {
+            width: 85px;
+            height: 85px;
+            margin: 0 auto 25px;
             display: block;
         }
        
@@ -303,9 +310,17 @@
                     <p>Diagnostic complet, réparation du moteur, batterie, contrôleur, freins, transmission et systèmes électriques.</p>
                 </div>
                 
-                <!-- Trottinette - avec nouveau logo -->
+                <!-- Trottinette avec ton logo -->
                 <div class="service-card">
-                    <i class="fas fa-motorcycle" style="transform: rotate(-15deg);"></i>
+                    <svg class="trottinette-logo" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="100" cy="100" r="92" fill="none" stroke="#00c853" stroke-width="16"/>
+                        <path d="M65 130 Q80 115 95 130" fill="none" stroke="#00c853" stroke-width="18" stroke-linecap="round"/>
+                        <path d="M135 130 Q120 115 105 130" fill="none" stroke="#00c853" stroke-width="18" stroke-linecap="round"/>
+                        <line x1="100" y1="65" x2="130" y2="110" stroke="#00c853" stroke-width="22" stroke-linecap="round"/>
+                        <line x1="130" y1="110" x2="155" y2="135" stroke="#00c853" stroke-width="18" stroke-linecap="round"/>
+                        <polygon points="100,65 85,55 115,55" fill="#00c853"/>
+                        <path d="M95 95 L105 120 L115 95" fill="none" stroke="#00c853" stroke-width="12" stroke-linecap="round"/>
+                    </svg>
                     <h3>Réparation de Trottinettes Électriques</h3>
                     <p>Tous modèles : réparation électronique, mécanique, changement de pièces, mise à jour firmware.</p>
                 </div>
@@ -320,7 +335,7 @@
         </div>
     </section>
 
-    <!-- Compétences -->
+    <!-- Compétences, Contact et Footer restent identiques -->
     <section id="competences" class="competences">
         <div class="container">
             <h2 class="section-title">Mes Compétences</h2>
@@ -344,7 +359,6 @@
         </div>
     </section>
 
-    <!-- Contact -->
     <section id="contact" class="contact">
         <div class="container">
             <h2 class="section-title">Contactez-moi</h2>
@@ -371,18 +385,15 @@
 
     <footer>
         <p>Jean-Paul Gautheron © 2026 — Technicien Vélos Électriques & Trottinettes</p>
-        <p style="margin-top:10px; font-size:0.85rem;">Disponible dès avril/mai 2026 — Paris et Île-de-France</p>
+        <p style="margin-top:10px; font-size:0.85rem;">Disponible dès avril/mai 2026 — Rennes</p>
     </footer>
 
     <script>
-        // Smooth scroll
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function(e) {
                 e.preventDefault();
                 const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({ behavior: 'smooth' });
-                }
+                if (target) target.scrollIntoView({ behavior: 'smooth' });
             });
         });
     </script>
